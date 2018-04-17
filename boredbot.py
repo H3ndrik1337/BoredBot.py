@@ -1,6 +1,10 @@
 import discord
+from discord.ext import commands
+from discord.ext.commands import Bot
 import asyncio
 import io
+import random
+import requests
 
 
 
@@ -70,32 +74,21 @@ async def on_message(message):
         help = discord.Embed(
             title="**Hey, Ich bin der BoredBot** :)",
             color=0xe74c3c,
-            description="Hey, hier siehst Du die aktuellen Commands:\n"
-                        "!gif [Tag]\n"
-                        "!ping\n"
-                        "!supreme\n"
-                        "!steam\n"
-                        "!owner\n"
-                        "!memes\n"
-                        "!bug\n"
-                        "!commands\n"
-                        "!asmr\n"
-                        "!hardbass\n"
-                        "!russia\n"
-                        "\n"
-                        "Der Bot ist noch in der Beta, was heißt, dass noch viele Commands dazu kommen werden"
+            description="hier kannst du alle derzeit möglichen Commands sehen: \n"
+                        "https://pastebin.com/GKcrpTun"
+
 
 
         )
         help.set_author(
             name="*klick hier*",
-            url="http://colinsgiraffe.com/"
+            url="https://www.youtube.com/watch?v=MG9e6m_4yVY"
 
          )
         help.add_field(
-            name="**NEUES**",
-            value="1. Es gibt einen Support von mir\n" 
-                  "2. Es gibt jetzt die Möglichkeit, den Admin anzuschreiben, um einen eigenen Command zu bekommen\n",
+            name="**Neuerungen bei der V0.2**",
+            value="1. Custom Command bei PN\n" 
+                  "2. Es wurde die Musik Funktion hinzugefügt\n",
         )
 
 
@@ -128,10 +121,9 @@ async def on_message(message):
         await  client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="video.gif")
 
 
-    if message.content.startswith("s.ass"):
-        ass_tag = message.content[6:]
 
 
 
-if __name__ == '__main__':
-    BoredBot.init()
+
+
+client.run("NDE5NDg2NDI1NjEyODEyMjk4.DX7u2g.5AFpcBcQE7CHN_oojd9t3hZfGYg")
