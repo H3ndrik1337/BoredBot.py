@@ -12,6 +12,7 @@ import requests
 
 type = 1
 client = discord.Client()
+token = os.environ["DISCORD_TOKEN"]
 
 hendrikid = "227403635166806016"
 
@@ -127,5 +128,5 @@ async def on_message(message):
 
 
 
-bot.run('<YOUR_TOKEN_HERE>')
+bot.run("DISCORD_TOKEN")
 
