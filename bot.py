@@ -129,6 +129,6 @@ async def on_message(message):
 
 
 
-token = os.environ['BOT_TOKEN']
+client.run("TOKEN")
 
 
