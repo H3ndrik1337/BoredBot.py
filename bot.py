@@ -118,6 +118,27 @@ async def on_message(message):
             str(rgif.get("data", {}).get('image_original_url')), stream=True
         )
         await  client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="video.gif")
+        
+        
+        if message.content.startswith('!uptime'):
+        await client.send_message(message.channel, "**Ich bin schon {0} Stunde/n und {1} Minuten online auf {2}. **".format(hour, minutes, message.server))
+
+
+
+async def tutorial_uptime():
+    await client.wait_until_ready()
+    global minutes
+    minutes = 0
+    global hour
+    hour = 0
+    while not client.is_closed:
+        await asyncio.sleep(60)
+        minutes += 1
+        if minutes == 60:
+            minutes = 0
+            hour += 1
+
+client.loop.create_task(tutorial_uptime())    
 
 
 
