@@ -129,5 +129,6 @@ async def on_message(message):
 
 
 
-client.login(process.env.BOT_TOKEN);
+token = os.environ['BOT_TOKEN']
+
 
