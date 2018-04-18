@@ -111,10 +111,6 @@ async def on_message(message):
     if message.content.startswith("!asmr"):
         await client.send_message(message.channel, "Autonomous Sensory Meridian Response (oft als ASMR abgekürzt) bezeichnet die Erfahrung eines statisch-ähnlichen oder kribbelnden Gefühls auf der Haut, das typischerweise auf der Kopfhaut beginnt und sich am Nacken und der oberen Wirbelsäule entlang bewegt (sogenannte Tingles)")
 
-    if message.content.startswith("!gasgasgas"):
-        await client.send_message(message.channel, "**GAS GAS GAS\n
-        https://www.youtube.com/watch?v=atuFSv2bLa8 **") 
-
 
     if message.content.startswith("!gif"):
         gif_tag = message.content[5:]
