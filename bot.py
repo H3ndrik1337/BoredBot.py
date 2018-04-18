@@ -128,5 +128,5 @@ async def on_message(message):
 
 
 
-bot.run("DISCORD_TOKEN")
+client.login(process.env.BOT_TOKEN);
 
