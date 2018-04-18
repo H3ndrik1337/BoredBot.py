@@ -125,7 +125,7 @@ async def on_message(message):
 
 
 
-async def tutorial_uptime():
+async def total_uptime():
     await client.wait_until_ready()
     global minutes
     minutes = 0
@@ -138,7 +138,7 @@ async def tutorial_uptime():
             minutes = 0
             hour += 1
 
-client.loop.create_task(tutorial_uptime())    
+client.loop.create_task(total_uptime())    
 
 
 
