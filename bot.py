@@ -9,11 +9,10 @@ import random
 import requests
 import os
 
-
+api = os.environ['RIOT_KEY']
 
 type = 1
 client = discord.Client()
-token = os.environ["DISCORD_TOKEN"]
 
 hendrikid = "227403635166806016"
 
@@ -129,6 +128,6 @@ async def on_message(message):
 
 
 
-client.run("TOKEN")
+bot.run(os.environ['BOT_TOKEN'])
 
 
