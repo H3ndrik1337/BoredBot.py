@@ -9,7 +9,7 @@ import random
 import requests
 import os
 
-api = os.environ['RIOT_KEY']
+api = str(os.environ.get('RIOT_KEY'))
 
 type = 1
 client = discord.Client()
@@ -128,6 +128,6 @@ async def on_message(message):
 
 
 
-bot.run(os.environ['BOT_TOKEN'])
+bot.run(str(os.environ.get('BOT_TOKEN')))
 
 
