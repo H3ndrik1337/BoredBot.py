@@ -6,4 +6,6 @@ discord
 asyncio
 Pymoe
 simplejson
-apiai
+youtube_dl
+pip
+
