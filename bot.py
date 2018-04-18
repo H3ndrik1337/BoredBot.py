@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
-import io
 import random
 import requests
 import os
@@ -125,5 +124,4 @@ async def on_message(message):
 
 
 
-bot.run(str(os.environ.get('BOT_TOKEN')))
-
+client.run(str(os.environ.get('BOT_TOKEN')))
