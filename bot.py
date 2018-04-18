@@ -120,7 +120,7 @@ async def on_message(message):
         await  client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="video.gif")
         
         
-        if message.content.startswith('!uptime'):
+    if message.content.startswith('!uptime'):
         await client.send_message(message.channel, "**Ich bin schon {0} Stunde/n und {1} Minuten online auf {2}. **".format(hour, minutes, message.server))
 
 
