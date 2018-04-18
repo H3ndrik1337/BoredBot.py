@@ -1,1 +1,1 @@
-worker: python boredbot.py
+worker: python app.py
