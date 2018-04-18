@@ -127,5 +127,5 @@ async def on_message(message):
 
 
 
-bot.run(TOKEN)
+bot.run('<YOUR_TOKEN_HERE>')
 
