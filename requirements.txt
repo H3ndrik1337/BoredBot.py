@@ -5,6 +5,5 @@ pyquery==1.2.8
 discord
 asyncio
 Pymoe
-requests
 simplejson
 apiai
