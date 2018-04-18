@@ -1,7 +1,7 @@
 import discord
-from discord.ext 
 import commands
-from discord.ext.commands 
+from discord.ext import commands
+from discord.ext.commands import Bot
 import Bot
 import asyncio
 import io
