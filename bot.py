@@ -9,7 +9,6 @@ import random
 import requests
 import os
 
-api = str(os.environ.get('RIOT_KEY'))
 
 type = 1
 client = discord.Client()
