@@ -50,3 +50,4 @@ async def on_message(message):
             players[message.server.id].resume()
         except:
             pass
+client.run(str(os.environ.get('BOT_TOKEN')))
