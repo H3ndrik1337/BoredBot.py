@@ -1,3 +1,4 @@
+discord.py[voice] ~= 0.16.0
 praw==2.1.18
 requests==2.3.0
 python-binary-memcached==0.24.2
@@ -8,5 +9,4 @@ Pymoe
 simplejson
 youtube_dl
 pip
-ffmpeg
 
