@@ -21,7 +21,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("------------")
-    await client.change_presence(game=discord.Game(see what I can with b.help'))
+    await client.change_presence(game=discord.Game("access with !help"))
 
 
 @client.event
