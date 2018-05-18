@@ -166,6 +166,13 @@ async def on_message(message):
         
         
         
+    if message.content.lower().startswith('?coin'): #Coinflip 50/50% chance kopf oder zahl
+        choice = random.randint(1,2)
+        if choice == 1:
+            await client.add_reaction(message, '🌑')
+        if choice == 2:
+            await client.add_reaction(message, '🌕')
+        
 
 async def total_uptime():
     await client.wait_until_ready()
