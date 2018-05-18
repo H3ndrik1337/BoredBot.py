@@ -9,5 +9,4 @@ Pymoe
 simplejson
 youtube_dl
 pip
-random
 
