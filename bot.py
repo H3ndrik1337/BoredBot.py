@@ -21,7 +21,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("------------")
-    await client.change_presence(game=discord.Game(access with !help'))
+    await client.change_presence(game=discord.Game(see what I can with b.help'))
 
 
 @client.event
@@ -50,7 +50,7 @@ async def on_message(message):
         await client.send_message(message.channel, "Memes an die Macht!")
 
 
-    if message.content.lower().startswith("!info"):
+    if message.content.lower().startswith(!info"):
         info = discord.Embed(
             title="Hey, Ich bin der BoredBot :)",
             color=0xe74c3c,
