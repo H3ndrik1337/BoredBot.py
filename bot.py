@@ -50,7 +50,7 @@ async def on_message(message):
         await client.send_message(message.channel, "Memes an die Macht!")
 
 
-    if message.content.lower().startswith(!info"):
+    if message.content.lower().startswith("!info"):
         info = discord.Embed(
             title="Hey, Ich bin der BoredBot :)",
             color=0xe74c3c,
