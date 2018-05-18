@@ -141,8 +141,6 @@ async def on_message(message):
             await voice_client.disconnect()
         except AttributeError:
             await client.send_message(message.channel, "-No Channel-")
-        except Exception as Hugo:
-            await client.send_message(message.channel, "Ein Error: ```{haus}```".format(haus=Hugo))
 
     if message.content.startswith('!play '):
         try:
