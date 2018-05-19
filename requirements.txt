@@ -1,12 +1,15 @@
 discord.py[voice] ~= 0.16.0
-praw==2.1.18
 requests
-python-binary-memcached==0.24.2
 pyquery==1.2.8
 discord
 asyncio
 Pymoe
 simplejson
-youtube_dl
 pip
-pydub==0.15.0
+youtube_dl
+colorlog
+cffi --only-binary all; 
+aiohttp ~= 2.3.10
+websockets
+chardet
+opuslib
