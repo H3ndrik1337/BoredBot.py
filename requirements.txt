@@ -9,5 +9,5 @@ Pymoe
 simplejson
 youtube_dl
 pip
-ffmpeg.exe
+ffmpeg
 
