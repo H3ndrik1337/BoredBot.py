@@ -10,6 +10,8 @@ import os
 type = 1
 client = discord.Client()
 
+players = {}
+
 hendrikid = "227403635166806016"
 
 minutes = 0
