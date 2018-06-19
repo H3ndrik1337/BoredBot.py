@@ -191,6 +191,9 @@ async def total_uptime():
 
 client.loop.create_task(total_uptime())    
 
+      if message.content.startswith("gay"):
+        await client.send_message (message.channel, "<@%s> no u ")
+
 
 
 
