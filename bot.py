@@ -125,46 +125,6 @@ async def on_message(message):
         
     if message.content.startswith('!uptime'):
         await client.send_message(message.channel, "**Ich bin schon {0} Stunde/n und {1} Minuten online auf {2}. **".format(hour, minutes, message.server))
-
-    if message.content.startswith('!join'):
-        try:
-            channel = message.author.voice.voice_channel
-            await client.join_voice_channel(channel)
-        except discord.errors.InvalidArgument:
-            await client.send_message(message.channel, "Kein Voice channel gefunden.")
-        except Exception as error:
-            await client.send_message(message.channel, "Ein Error: ```{error}```".format(error=error))
-
-    if message.content.startswith('!quit'):
-        try:
-            voice_client = client.voice_client_in(message.server)
-            await voice_client.disconnect()
-        except AttributeError:
-            await client.send_message(message.channel, "Ich bin zur zeit nicht connected.")
-        except Exception as Hugo:
-            await client.send_message(message.channel, "Ein Error: ```{haus}```".format(haus=Hugo))
-
-    if message.content.startswith('!play '):
-        try:
-            yt_url = message.content[6:]
-            channel = message.author.voice.voice_channel
-            voice = await client.join_voice_channel(channel)
-            player = await voice.create_ytdl_player(yt_url)
-            players[message.server.id] = player
-            player.start()
-        except:
-            await client.send_message(message.channel, "Error.")
-
-    if message.content.startswith('!pause'):
-        try:
-            players[message.server.id].pause()
-        except:
-            pass
-    if message.content.startswith('!resume'):
-        try:
-            players[message.server.id].resume()
-        except:
-            pass
         
         
         
