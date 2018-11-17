@@ -1,5 +1,4 @@
-pip
-colorlog
+discord
 asyncio
-requests
+youtube-dl
 PyNaCl
