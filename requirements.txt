@@ -1,5 +1,4 @@
 discord
 asyncio
 youtube-dl
-PyNaCl
 requests
